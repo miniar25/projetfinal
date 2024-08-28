@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow:auto;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('books2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px); /* Ajuste le niveau de flou ici */
+    z-index: -1; /* Place l'image en arrière-plan */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus de l'image */
+    padding: 20px;
+    color: white; /* Choisis une couleur de texte qui contraste avec l'image */
+}
+
+/* Header Styling */
+header {
+    background-color: #5c450b52; 
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #F5F5DC; /* Creamy Beige */
+    font-family: Brush Script MT (cursive);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #F5F5DC;
+    font-weight: bold;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 calc(25% - 40px); /* Four items per row with space for gaps */
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #F5F5DC; /* Creamy Beige background for each item */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    padding: 10px;
+    font-weight: bold;
+    color: #2E2E2E; /* Dark Charcoal text color */
+}
+
+.gallery-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E2E2E;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 10px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
+  .hero-section {
+    background-image: url('first.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(203, 184, 141);
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .hero-section h2 {
+    font-size: 3em;
+    margin: 0;
+  }
+
+  .hero-section p {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .flash-sale {
+    background-color: #f0eddd;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  .flash-sale img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .flash-sale .book-image {
+    width: 300px;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .flash-sale h3 {
+    margin-top: 200px;
+    font-size: 2em;
+    color: #574802;
+  }
+
+  .flash-sale .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #574802;
+    color: rgb(235, 221, 198);
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden; /* To keep the glitter within the button */
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #574802;
+    color: rgb(235, 221, 198);
+  }
+
+  /* Glitter animation styles */
+  .glitter {
+    position: absolute;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    top: -50px; /* Start above the button */
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: glitterFall 2s ease forwards;
+  }
+
+  @keyframes glitterFall {
+    0% {
+      top: -50px;
+      opacity: 0;
+      transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      top: 50%; /* Adjust to land on the button */
+      opacity: 0;
+      transform: translateX(-50%) rotate(360deg) scale(0.5);
+    }
+  }

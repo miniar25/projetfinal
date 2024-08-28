@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fairy Tales Collection</title>
+    <link rel="stylesheet" href="resine.css" />
+    <style>
+      body {
+        background-image: url("enchanted flowers.jpg");
+        background-size: cover;
+        color: rgb(212, 202, 179);
+        font-family: Arial, sans-serif;
+      }
+      .book-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .book-item {
+        flex: 1 1 calc(20% - 40px); /* Adjust width for 5 items per row, with space for margin */
+        margin: 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Background for readability */
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      }
+      .book-item img {
+        width: 100%; /* Make the image fill the book item container */
+        height: auto;
+        border-radius: 10px;
+      }
+      .book-item p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rare Books Collection</h1>
+    </header>
+    <div class="book-gallery">
+      <div class="book-item">
+        <img src="adventure.jpg" alt="Book 1" />
+        <p>Title: Fairy Tale 1</p>
+        <p>Price: $10</p>
+        <p>In Stock</p>
+      </div>
+      <div class="book-item">
+        <img src="books3.jpg" alt="Book 2" />
+        <p>Title: Fairy Tale 2</p>
+        <p>Price: $15</p>
+        <p>Out of Stock</p>
+      </div>
+      <div class="book-item">
+        <img src="enchanted flowers.jpg" alt="Book 3" />
+        <p>Title: Fairy Tale 3</p>
+        <p>Price: $20</p>
+        <p>In Stock</p>
+      </div>
+      <div class="book-item">
+        <img src="religious.jpg" alt="Book 4" />
+        <p>Title: Fairy Tale 4</p>
+        <p>Price: $15</p>
+        <p>Out of Stock</p>
+      </div>
+      <div class="book-item">
+        <img src="enchanted flowers.jpg" alt="Book 3" />
+        <p>Title: Fairy Tale 3</p>
+        <p>Price: $20</p>
+        <p>In Stock</p>
+      </div>
+      <div class="book-item">
+        <img src="religious.jpg" alt="Book 4" />
+        <p>Title: Fairy Tale 4</p>
+        <p>Price: $15</p>
+        <p>Out of Stock</p>
+      </div>
+      <!-- Add more books as needed -->
+    </div>
+  </body>
+</html>

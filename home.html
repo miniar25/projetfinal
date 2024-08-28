@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Timeless Vault</title>
+    <link rel="stylesheet" href="resine.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>The Timeless Vault</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <a href="shop.html" class="button">Shop Now</a>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div>
+        <h2>Welcome to The Timeless Vault</h2>
+        <p>A Sanctuary of Knowledge and Enchantment</p>
+      </div>
+    </section>
+
+    <section class="flash-sale">
+      <img src="" alt="Magical Flower Sale" />
+      <h3>
+        🌟 Flash Sale! Discover Enchanted Flowers Book with Healing Powers 🌟
+      </h3>
+      <p>Limited Time Offer! Explore our magical collection now.</p>
+      <img
+        src="flower book.jpg"
+        alt="Enchanted Flowers Book"
+        class="book-image"
+      />
+      <a href="sale.html" class="button">Shop Now</a>
+    </section>
+
+    <!-- Gallery or Featured Items Section -->
+    <section class="gallery">
+      <!-- Gallery items here -->
+    </section>
+
+    <footer>
+      <p>&copy; 2024 The Timeless Vault | All rights reserved</p>
+    </footer>
+
+    <!-- Glitter animation -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const button = document.querySelector(".flash-sale .button");
+
+        // Create glitter element
+        const glitter = document.createElement("img");
+        glitter.src = "glitter.jpg"; // Replace with your glitter image path
+        glitter.classList.add("glitter");
+
+        // Append glitter to the button
+        button.appendChild(glitter);
+      });
+    </script>
+  </body>
+</html>
